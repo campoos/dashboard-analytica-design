@@ -426,16 +426,14 @@ main #dashboard-container #card2 {
     header {
         height: 3.75rem;
         padding: 0rem 1rem;
-    }
-
-    header #logo {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
+        position: relative;
     }
 
     header #logo img {
         height: 1.25rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     header #logo label {
@@ -443,95 +441,169 @@ main #dashboard-container #card2 {
     }
 
     header #buttons {
+        gap: 0.5rem;
+    }
+
+    header #buttons .button {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    header #buttons .button img {
+        height: 1rem;
+    }
+
+    header #perfil {
+        height: 2.5rem;
+        width: 2.5rem;
+
+        padding: 0rem;
+        gap: 0rem;
+    }
+
+    header #perfil #icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    header #perfil label {
+        display: none;
+    }
+
+    header #perfil img {
+        display: none;
+    }
+
+
+
+    /* --------------------- */
+
+    
+    main {
+        padding: 2rem 1rem;
+        gap: 0rem;
+    }
+
+    main .navigation-bar {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: auto;
+        padding: 1rem;
+
+        height: 3.75rem;
+
+        align-items: start;
+        justify-content: center;
+
+        background-color: transparent;
+        outline: none;
+    }
+
+    main .navigation-bar #toggle-bar {
+        height: 1rem;
+        opacity: 0.75;
+    }
+
+    main .navigation-bar #menu {
+        display: none;
+    }
+
+    /* ---------- */
+
+    main .navigation-bar-closed {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        width: 18.9375rem;
+        height: 100dvh;
+        border-radius: 0rem;
+        padding: 1.5rem 1rem;
+
+
+        align-items: end;
+        gap: 5rem;
+    }
+
+    main .navigation-bar-closed #toggle-bar {
+        height: 1rem;
+    }
+
+    main .navigation-bar-closed .menu-item {
+        height: 3rem;
+
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    main .navigation-bar-closed .menu-item img {
+        height: 1rem;
+    }
+
+    main .navigation-bar-closed .menu-item label {
         display: flex;
-        align-items: center;
+    }
+
+
+    main .navigation-bar-closed .menu-item.active {
+        height: 3rem;
 
         gap: 1rem;
     }
 
-    header #buttons .button {
-        height: 3rem;
-        width: 3rem;
-        border: 1px solid var(--borda-input);
-        border-radius: 5rem;
+    main .navigation-bar-closed .menu-item.active img {
+        height: 1rem;
+    }
 
+    main .navigation-bar-closed .menu-item.active label {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        cursor: pointer;
-        transition: background-color 0.2s ease-in-out;
     }
 
-    header #buttons .button:hover {
-        background-color: var(--hover-branco);
+    /* ---------- */
+    
+    main #dashboard-container {
+        gap: 0rem;
+        padding: 0;
+        border-radius: 0rem;
     }
 
-    header #buttons .button:active {
-        transform: scale(0.95);
-    }
-
-    header #buttons .button img {
-        height: 1.25rem;
-        opacity: 0.75;
-    }
-
-    header #perfil {
+    main #dashboard-container #dashboard-content {
         display: flex;
-        align-items: center;
-
-        height: 3rem;
-        width: 12.375rem;
-
-        padding: 0.5rem;
-        gap: 0.5rem;
-
-        border: 1px solid var(--borda-input);
-        border-radius: 3rem;
-
-        transition: background-color 0.2s ease-in-out;
-        cursor: pointer;
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    header #perfil:hover {
-        background-color: var(--hover-branco);
-    }
+    main #dashboard-container h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
 
-    header #perfil:active {
-        transform: scale(0.98);
-    }
-
-    header #perfil #icon {
-        height: 2rem;
-        width: 2rem;
-        border-radius: 5rem;
-        background-color: var(--roxo-secundario);
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        background-image: url("../assets/imgs/geral/lain.webp");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    header #perfil #icon span{
-        font-size: 1rem;
-        font-weight: 400;
-        color: var(--texto-branco);
-    }
-
-    header #perfil label {
-        font-size: 1rem;
-        font-weight: 400;
         color: var(--texto-normal);
     }
 
-    header #perfil img {
-        width: 0.75rem;
-        opacity: 0.75;
-        margin: 0.5rem;
+    main #dashboard-container #card1 {
+        width: 100%;
+        height: 30rem;
+        background-color: var(--background-claro);
+        border-radius: 5px;
+        outline: 1px solid var(--borda-input);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main #dashboard-container #card2 {
+        width: 100%;
+        height: 30rem;
+        background-color: var(--background-claro);
+        border-radius: 5px;
+        outline: 1px solid var(--borda-input);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
