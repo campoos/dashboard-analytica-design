@@ -1,0 +1,23 @@
+:root {
+    --roxo-primario: #7D53F3;
+    --roxo-secundario: #A38DF8;
+    --roxo-terciario: #DED4FC;
+    --roxo-quaternario: #F4F3FF;
+
+    --texto-preto: #000000;
+    --texto-normal: #444444;
+    --texto-transparente: #BBBBBB;
+    --texto-branco: #FFFFFF;
+
+    --background-claro: #FFFFFF;
+    --background-cinza: #F9F6FB;
+
+    --borda-input: #DFDFDF;
+
+    --hover-branco: #F8F8F8;
+
+
+    --font-poppins: 'Poppins', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+}
+
