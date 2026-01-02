@@ -13,11 +13,10 @@ import navigationDashboard from '../assets/imgs/navigation-bar/dashboard-nav.png
 import navigationAssistente from '../assets/imgs/navigation-bar/assistente-nav.png'
 import navigationCalendario from '../assets/imgs/navigation-bar/calendario-nav.png'
 import navigationRecursos from '../assets/imgs/navigation-bar/recursos-nav.png'
-import navigationMural from '../assets/imgs/navigation-bar/mural-nav.png'
-import navigationEntregas from '../assets/imgs/navigation-bar/entregas-nav.png'
 import navigationRanking from '../assets/imgs/navigation-bar/ranking-nav.png'
 import navigationChats from '../assets/imgs/navigation-bar/chats-nav.png'
 import navigationConfig from '../assets/imgs/navigation-bar/configuracoes-nav.png'
+import infoIcon from "../assets/imgs/geral/info-icon.png"
 
 function App() {
 
@@ -93,8 +92,31 @@ function App() {
             <div id="dashboard-content">
               <h1>Dashboard</h1>
 
-              <div id="card1">card 1</div>
-              <div id="card2">card 2</div>
+              <div id="card-session-1">
+                <div className="card media">
+                  <span>Média geral</span>
+                  <div id="notaMedia">
+                    <h2>8.0</h2>
+                    <label htmlFor="">+1.7</label>
+                  </div>
+                </div>
+                <div className="card">
+                  <img src={infoIcon} alt="" />
+                  <span>Atividades entregues</span>
+                  <h2>6</h2>
+                </div>
+                <div className="card">
+                  <img src={infoIcon} alt="" />
+                  <span>Atividades pendentes</span>
+                  <h2>4</h2>
+                </div>
+                <div className="card">
+                  <img src={infoIcon} alt="" />
+                  <span>Atividades atrasadas</span>
+                  <h2>2</h2>
+                </div>
+              </div>
+              <div id="card-session-2"></div>
             </div>
           </div>
         </main>
